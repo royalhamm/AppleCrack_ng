@@ -52,6 +52,15 @@ pacman -S --needed --noconfirm \
         python-armor python-fouldecrypt \
         ideviceinstaller libideviceactivation
 
+# Install Apple_Crack_NG On Your System: Open A Terminal From The Apple_Crack_NG Project Root Directory.
+  python -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+
+# To Run Apple_Crack_NG Once The Installation Is Completed
+  python apple_crack_ng.py
+# Or
+  apple_crack_ng --gui
 
 
 # AppleCrack_NG CLI Interface
