@@ -1,0 +1,7 @@
+PyQt5>=5.15.0
+pymobiledevice3>=1.0.0
+requests>=2.25.0
+click>=7.0
+tqdm>=4.50.0
+colorama>=0.4.0
+paramiko>=2.7.0
