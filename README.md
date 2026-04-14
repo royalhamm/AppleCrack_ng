@@ -32,3 +32,50 @@ AppleCrack_NG requires:
 ### System Requirements:
 ```bash
 sudo pacman -Syyu --needed --noconfirm
+
+# Basic system tools and Python components compatible with BlackArch Linux
+pacman -S --needed --noconfirm \
+    python-pip python-setuptools python-wheel \
+    qt5-base qt5-tools qt5-declarative pyqt5 \
+    libimobiledevice libusbmuxd \
+    libusb usbutils \
+    openssh openssl \
+    git curl wget unzip tar gzip bzip2 \
+    python-requests python-click python-tqdm python-colorama \
+    python-pyusb python-pillow
+
+# Install from Chaotic-AUR repository if available
+echo "[+] Installing additional packages from Chaotic-AUR..."
+if pacman -Qi chaotic-cachyos-keyring &>/dev/null; then
+    yay -S --needed --noconfirm checkra1n palera1n odysseyra1n \
+        ios-deploy frida-tools mitmproxy burpsuite \
+        john-the-ripper impacket pwntools cve-search nmap \
+        python-frida python-lldb python-iokit-utils \
+        python-armor python-fouldecrypt \
+        ideviceinstaller libideviceactivation
+
+
+
+# AppleCrack_NG CLI Interface
+
+# Available commands:
+  device list                    List connected devices
+  device connect                 Connect to a specific device
+  bypass-mdm                     Bypass MDM settings
+  bypass-activation-lock         Bypass activation lock
+  jailbreak checkra1n            Run checkra1n jailbreak tool
+  jailbreak palera1n             Run palera1n jailbreak tool
+  firmware install               Install firmware from file
+  backup create                  Create device backup
+  restore                        Restore device from backup
+
+# Options:
+  -h, --help                     Show this help message
+  -v, --verbose                 Enable verbose output
+
+# Examples:
+  applecrack_ng device list
+  applecrack_ng bypass-mdm
+  applecrack_ng jailbreak checkra1n
+
+
