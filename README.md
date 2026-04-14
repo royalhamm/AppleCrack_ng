@@ -21,9 +21,9 @@ AppleCrack_NG is a comprehensive security auditing tool designed for managing an
 ## 🛠️ Requirements
 
 AppleCrack_NG requires:
-- BlackArch Linux (with CachyOS and Chaotic-AUR repositories)
+- BlackArch Linux (with Chaotic-AUR Repository)
 - KDE Plasma Desktop Environment  
-- Intel Core Ultra 7 processor with EVO GPU support
+- Intel Processor
 - USB access for iOS device connections  
 - Required packages from Arch, BlackArch, and Chaotic-AUR repositories
 
@@ -31,4 +31,4 @@ AppleCrack_NG requires:
 
 ### System Requirements:
 ```bash
-sudo pacman -Syu
+sudo pacman -Syyu --needed --noconfirm
