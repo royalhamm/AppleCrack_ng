@@ -42,11 +42,9 @@ pacman -S --needed --noconfirm \
     openssh openssl \
     git curl wget unzip tar gzip bzip2 \
     python-requests python-click python-tqdm python-colorama \
-    python-pyusb python-pillow
+    python-pyusb python-pillow metasploit
 
 # Install from Chaotic-AUR repository if available
-echo "[+] Installing additional packages from Chaotic-AUR..."
-if pacman -Qi chaotic-cachyos-keyring &>/dev/null; then
     yay -S --needed --noconfirm checkra1n palera1n odysseyra1n \
         ios-deploy frida-tools mitmproxy burpsuite \
         john-the-ripper impacket pwntools cve-search nmap \
